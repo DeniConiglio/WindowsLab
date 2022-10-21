@@ -22,21 +22,24 @@ namespace practicaObligatoria
 
     private void btbEnviarDatos_Click(object sender, EventArgs e)
         {
-            Imprimir();
-        }
-        #region mis metodos
-
-        private void Imprimir()
-        {
-            int hoy=(int)DateTime.Today.Year;
+            int hoy = (int)DateTime.Today.Year;
             int anio = Convert.ToInt32(txtAnio.Text);
-            int edad=hoy-anio;
+            int edad = hoy - anio;
 
             string nombre = txtNombre.Text;
-            string apellido= txtApellido.Text;
-           
+            string apellido = txtApellido.Text;
+
+            Imprimir( nombre, apellido,edad);
+        }
+        #region mis metodos
+        
+        private void Imprimir(string nombre,string apellido)
+        {
             //b
             MessageBox.Show(nombre + ", " + apellido);
+        }
+        private void Imprimir(string nombre, string apellido, int edad)
+        {
             //c
             MessageBox.Show(nombre + " " + apellido + " tiene " + edad + " años");
         }
