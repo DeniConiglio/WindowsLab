@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtvalor = new System.Windows.Forms.TextBox();
-            this.ibiIngresoNro = new System.Windows.Forms.Label();
-            this.btbEnviar = new System.Windows.Forms.Button();
+            this.btbIngreso = new System.Windows.Forms.Button();
+            this.ibiEdad = new System.Windows.Forms.Label();
+            this.txtEdad = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtvalor
+            // btbIngreso
             // 
-            this.txtvalor.Location = new System.Drawing.Point(259, 123);
-            this.txtvalor.Name = "txtvalor";
-            this.txtvalor.Size = new System.Drawing.Size(100, 22);
-            this.txtvalor.TabIndex = 0;
+            this.btbIngreso.Location = new System.Drawing.Point(430, 160);
+            this.btbIngreso.Name = "btbIngreso";
+            this.btbIngreso.Size = new System.Drawing.Size(75, 23);
+            this.btbIngreso.TabIndex = 0;
+            this.btbIngreso.Text = "Ingresar";
+            this.btbIngreso.UseVisualStyleBackColor = true;
+            this.btbIngreso.Click += new System.EventHandler(this.btbIngreso_Click);
             // 
-            // ibiIngresoNro
+            // ibiEdad
             // 
-            this.ibiIngresoNro.AutoSize = true;
-            this.ibiIngresoNro.Location = new System.Drawing.Point(151, 129);
-            this.ibiIngresoNro.Name = "ibiIngresoNro";
-            this.ibiIngresoNro.Size = new System.Drawing.Size(102, 16);
-            this.ibiIngresoNro.TabIndex = 1;
-            this.ibiIngresoNro.Text = "Ingrese un valor";
+            this.ibiEdad.AutoSize = true;
+            this.ibiEdad.Location = new System.Drawing.Point(106, 167);
+            this.ibiEdad.Name = "ibiEdad";
+            this.ibiEdad.Size = new System.Drawing.Size(88, 16);
+            this.ibiEdad.TabIndex = 1;
+            this.ibiEdad.Text = "Ingrese Edad";
             // 
-            // btbEnviar
+            // txtEdad
             // 
-            this.btbEnviar.Location = new System.Drawing.Point(525, 122);
-            this.btbEnviar.Name = "btbEnviar";
-            this.btbEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btbEnviar.TabIndex = 2;
-            this.btbEnviar.Text = "Enviar";
-            this.btbEnviar.UseVisualStyleBackColor = true;
-            this.btbEnviar.Click += new System.EventHandler(this.btbEnviar_Click);
+            this.txtEdad.Location = new System.Drawing.Point(216, 161);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(100, 22);
+            this.txtEdad.TabIndex = 2;
             // 
-            // FormCaso2
+            // FormCaso3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btbEnviar);
-            this.Controls.Add(this.ibiIngresoNro);
-            this.Controls.Add(this.txtvalor);
-            this.Name = "FormCaso2";
-            this.Text = "FormCaso2";
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.ibiEdad);
+            this.Controls.Add(this.btbIngreso);
+            this.Name = "FormCaso3";
+            this.Text = "FormCaso3";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,8 +76,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtvalor;
-        private System.Windows.Forms.Label ibiIngresoNro;
-        private System.Windows.Forms.Button btbEnviar;
+        private System.Windows.Forms.Button btbIngreso;
+        private System.Windows.Forms.Label ibiEdad;
+        private System.Windows.Forms.TextBox txtEdad;
     }
 }

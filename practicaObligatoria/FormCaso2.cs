@@ -17,21 +17,32 @@ namespace practicaObligatoria
             InitializeComponent();
         }
 
-        private void btbEnviar_Click(object sender, EventArgs e)
+        private void btbIngreso_Click(object sender, EventArgs e)
         {
-            int Valor = Convert.ToInt32(txtvalor.Text);
-            string Tabla = "";
-            
-            for (int i = 0; i <= 12; i++)
-            {
-                int Multi = Valor * i;
-                Tabla += Convert.ToString(Valor) + "x" + Convert.ToString(i) + "=" + Convert.ToString(Multi) + "\n";
-                
-            }
-            MessageBox.Show("Tabla: \n"+Tabla);
-        }
+            int Edad= Convert.ToInt32(txtEdad.Text);
 
-        
-        
+            if(Edad==0)
+            {
+                MessageBox.Show("ERROR");
+            }
+            else
+            {
+                if(Edad<18)
+                {
+                    MessageBox.Show("MENOR DE EDAD");
+                }
+                else
+                {
+                    if(Edad<60)
+                    {
+                        MessageBox.Show("MAYOR DE EDAD");
+                    }
+                    else
+                    {
+                        MessageBox.Show("ADULTO MAYOR");
+                    }
+                }
+            }
+        }
     }
 }

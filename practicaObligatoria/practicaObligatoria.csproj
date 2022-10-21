@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,17 +53,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCaso2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCaso2.Designer.cs">
-      <DependentUpon>FormCaso2.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormCaso3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCaso3.Designer.cs">
       <DependentUpon>FormCaso3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaso2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaso2.Designer.cs">
+      <DependentUpon>FormCaso2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCaso4.cs">
       <SubType>Form</SubType>
@@ -76,19 +77,31 @@
     <Compile Include="FormCaso5.Designer.cs">
       <DependentUpon>FormCaso5.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCaso6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaso6.Designer.cs">
+      <DependentUpon>FormCaso6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCaso2.resx">
-      <DependentUpon>FormCaso2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormCaso3.resx">
       <DependentUpon>FormCaso3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCaso2.resx">
+      <DependentUpon>FormCaso2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCaso4.resx">
       <DependentUpon>FormCaso4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaso5.resx">
+      <DependentUpon>FormCaso5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaso6.resx">
+      <DependentUpon>FormCaso6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +18,24 @@ namespace practicaObligatoria
             InitializeComponent();
         }
 
-        private void btbDiametro_Click(object sender, EventArgs e)
+        private void btbCirculo_Click(object sender, EventArgs e)
         {
-            decimal Longitud = Convert.ToDecimal(txtLongitud.Text);
-            decimal pi=2,14;
-            decimal Diametro = Longitud * pi;
+            int Longitud = Convert.ToInt32(Interaction.InputBox("Ingrese longitud"));
+            decimal pi = (decimal)3.14;
+            decimal Diametro = (Longitud * pi)* (Longitud * pi);
 
             MessageBox.Show("Diametro: " + Diametro);
+        }
+
+        private void btbTrapecio_Click(object sender, EventArgs e)
+        {
+            int Base1 = Convert.ToInt32(Interaction.InputBox("Ingrese Base 1"));
+            int Base2 = Convert.ToInt32(Interaction.InputBox("Ingrese Base 2"));
+            int Altura = Convert.ToInt32(Interaction.InputBox("Ingrese Altura"));
+            int sumasBases = Base1 + Base2;
+            int Area = (sumasBases/2)*Altura;
+
+            MessageBox.Show("El area del trapecio es: "+Area);
         }
     }
 }
